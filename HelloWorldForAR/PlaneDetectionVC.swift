@@ -32,7 +32,7 @@ class PlaneDetectionVC: UIViewController {
         
         if let firstPlane = results.first { // This would be the first plane Ray intersected with
             // 3D point (x, y, z) of the touch
-            let worldPos = simd_make_float3(firstPlane.worldTransform.columns.3) // Takes the 3D position from the first ray cast result and convert that into 3D vector
+            let worldPos = simd_make_float3(firstPlane.worldTransform.columns.3) // Takes the 3 D position from the first ray cast result and convert that into 3D vector
             
             // Create sphere
             let sphere = createSphere()

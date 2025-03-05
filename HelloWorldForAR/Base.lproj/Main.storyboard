@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUH-mK-CLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qna-TU-b8r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -65,6 +65,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDk-1A-zKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="999" y="-2"/>
+        </scene>
+        <!--Rotate And ScaleVC-->
+        <scene sceneID="R1F-oU-NTi">
+            <objects>
+                <viewController id="Qna-TU-b8r" customClass="RotateAndScaleVC" customModule="HelloWorldForAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNR-C6-wCM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGL-Gi-FL5">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NW1-0s-f8X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NW1-0s-f8X" firstAttribute="bottom" secondItem="JGL-Gi-FL5" secondAttribute="bottom" id="2hc-y0-tcl"/>
+                            <constraint firstItem="JGL-Gi-FL5" firstAttribute="leading" secondItem="NW1-0s-f8X" secondAttribute="leading" id="9lH-Ji-DaW"/>
+                            <constraint firstItem="NW1-0s-f8X" firstAttribute="trailing" secondItem="JGL-Gi-FL5" secondAttribute="trailing" id="XYT-dc-ZdZ"/>
+                            <constraint firstItem="JGL-Gi-FL5" firstAttribute="top" secondItem="NW1-0s-f8X" secondAttribute="top" id="yM1-WD-a8s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="JGL-Gi-FL5" id="xfd-rr-yAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8C-sq-6Y0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938" y="-2"/>
         </scene>
     </scenes>
     <resources>
