@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUH-mK-CLm">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -36,6 +36,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+        <!--Plane DetectionVC-->
+        <scene sceneID="v4B-v1-Qof">
+            <objects>
+                <viewController id="tUH-mK-CLm" customClass="PlaneDetectionVC" customModule="HelloWorldForAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EA7-ZL-IkN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8q-6T-xvT">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IlW-BL-7iZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C8q-6T-xvT" firstAttribute="leading" secondItem="IlW-BL-7iZ" secondAttribute="leading" id="80x-d2-qgG"/>
+                            <constraint firstItem="C8q-6T-xvT" firstAttribute="top" secondItem="IlW-BL-7iZ" secondAttribute="top" id="Sz2-5r-yzO"/>
+                            <constraint firstItem="IlW-BL-7iZ" firstAttribute="bottom" secondItem="C8q-6T-xvT" secondAttribute="bottom" id="r0j-bP-69s"/>
+                            <constraint firstItem="IlW-BL-7iZ" firstAttribute="trailing" secondItem="C8q-6T-xvT" secondAttribute="trailing" id="wEi-eq-dyZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="C8q-6T-xvT" id="h4Z-Gz-mrC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDk-1A-zKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="-2"/>
         </scene>
     </scenes>
     <resources>
