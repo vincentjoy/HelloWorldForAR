@@ -95,6 +95,35 @@
             </objects>
             <point key="canvasLocation" x="1938" y="-2"/>
         </scene>
+        <!--ScreenVC-->
+        <scene sceneID="rot-DV-RbO">
+            <objects>
+                <viewController id="R31-pm-Tst" customClass="TVScreenVC" customModule="HelloWorldForAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nvx-f8-0iZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYD-2O-ZSi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i4K-6D-f5w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i4K-6D-f5w" firstAttribute="bottom" secondItem="oYD-2O-ZSi" secondAttribute="bottom" id="GuS-qc-auf"/>
+                            <constraint firstItem="oYD-2O-ZSi" firstAttribute="top" secondItem="i4K-6D-f5w" secondAttribute="top" id="Zzs-hr-CAu"/>
+                            <constraint firstItem="i4K-6D-f5w" firstAttribute="trailing" secondItem="oYD-2O-ZSi" secondAttribute="trailing" id="fv1-2a-kO4"/>
+                            <constraint firstItem="oYD-2O-ZSi" firstAttribute="leading" secondItem="i4K-6D-f5w" secondAttribute="leading" id="hlU-RV-aho"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="oYD-2O-ZSi" id="qEe-pb-Hr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJL-l0-CCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
